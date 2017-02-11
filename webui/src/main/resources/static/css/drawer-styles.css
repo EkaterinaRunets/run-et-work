@@ -1,0 +1,29 @@
+.nav-drawer {
+    width: 180px;
+    height: 100%;
+    background: rgba(195, 195, 195, 0.38);
+    border: rgba(205, 205, 205, 0.51) 1px solid;
+    padding-top: 50px;
+}
+
+.drawer-item-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.drawer-link {
+    padding: 5px 25px;
+}
+
+.drawer-link:hover,
+.drawer-link:active {
+    background: rgba(152, 152, 152, 0.38);
+    cursor: pointer;
+}
+
+.drawer-section-other {
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: solid 1px darkgray;
+}
