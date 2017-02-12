@@ -5,7 +5,7 @@
   user-select: none;
   cursor: default;
   margin-top: 10px;
-  background-color: rgb(104, 145, 162);
+  background: rgb(157, 182, 215);
   /* background-color: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));*/
   font-weight: 500;
   font-size: 14px;
@@ -82,7 +82,7 @@
 body, html {
   height: 100%;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgb(255, 255, 255), rgb(145, 181, 180));
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(183, 211, 245));
 }
 
 .card-container.card {
