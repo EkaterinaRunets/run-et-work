@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="runetwork-app">
 <head>
     <meta charset="UTF-8">
     <title>Home page</title>
@@ -12,10 +12,13 @@
     <script type="text/javascript" src="../js/tether.min.js"></script>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../js/home.js"></script>
+    <script type="text/javascript" src="../js/angular.min.js"></script>
+    <script type="text/javascript" src="../js/runetwork-angular-app.js"></script>
+    <script type="text/javascript" src="../js/runetwork-angular-controller.js"></script>
 
 </head>
 <body>
-
+<div class="full-size" ng-controller="sampleUsersController as suControl">
     <div class="nav-drawer">
         <div class="drawer-link">
             <img src="../img/icons/home.png" class="drawer-item-icon">Home
@@ -26,7 +29,7 @@
         <div class="drawer-link">
             <img src="../img/icons/tasks.png" class="drawer-item-icon">Tasks
         </div>
-        <div class="drawer-link" onclick="loadContacts()">
+        <div class="drawer-link" ng-click="suControl.loadUsers()">
             <img src="../img/icons/contacts.png" class="drawer-item-icon">Contacts
         </div>
         <div class="drawer-link">
@@ -56,8 +59,12 @@
     </div>
 
     <div class="content hidden">
-
+        <div>
+            <ul ng-repeat="user in users">
+                <li>Name: {{user.name}} {{user.patronymic}} {{user.lastName}}, Role: {{user.role}}, {{user.contacts[0].contactType}}, {{user.contacts[0].value}}</li>
+            </ul>
+        </div>
     </div>
-
+</div>
 </body>
 </html>

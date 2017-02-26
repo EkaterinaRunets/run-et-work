@@ -215,3 +215,8 @@ body, html {
 .forgot-password:focus{
   color: rgb(12, 97, 33);
 }
+
+.full-size {
+  width: 100%;
+  height: 100%;
+}
